@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import {
   Animated,
   ScrollViewProps,
@@ -12,7 +12,9 @@ import { useCollapsibleStyle } from '../useCollapsibleStyle'
 /**
  * Use like a regular ScrollView.
  */
-export const ScrollView: React.FC<Omit<ScrollViewProps, 'onScroll'>> = ({
+export const ScrollView: FunctionComponent<
+  Omit<ScrollViewProps, 'onScroll'>
+> = ({
   contentContainerStyle,
   style,
   onContentSizeChange,
